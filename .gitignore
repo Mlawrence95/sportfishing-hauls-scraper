@@ -1,0 +1,6 @@
+
+mysql_config/config.json
+.ipynb_checkpoints/sportfishing scraper-checkpoint.ipynb
+geckodriver.log
+*.xml
+*.iml
