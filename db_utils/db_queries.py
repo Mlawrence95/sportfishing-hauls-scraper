@@ -51,6 +51,26 @@ def sql_get_completed_fishing_report_links(db_obj):
     return set(list(map(lambda x: x[3], completed_rows)))
 
 
+def sql_get_remaining_dates(db_obj):
+    """
+    Get all dates that have a fishing report but no weather data
+    """
+    cursor = db_obj.cursor()
+    cursor.execute("SELECT * FROM fishing_reports;")
+
+    completed_rows = cursor.fetchall()
+    fishing_dates = set(list(map(lambda x: x[1], completed_rows)))
+
+    cursor.execute("SELECT * FROM weather_reports;")
+    completed_rows = cursor.fetchall()
+    weather_dates = set(list(map(lambda x: x[1], completed_rows)))
+
+    remaining_dates = fishing_dates.difference(weather_dates)
+    remaining_dates = list(remaining_dates)
+
+    return remaining_dates
+
+
 def sql_all_reports_with_weather(db_obj):
     weather_columns = ["low_temp", "avg_temp", "high_temp",
                        "inches_precip", "miles_visible", "max_wind",

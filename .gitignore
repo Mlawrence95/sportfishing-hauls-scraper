@@ -4,3 +4,4 @@ mysql_config/config.json
 geckodriver.log
 *.xml
 *.iml
+*.pyc
