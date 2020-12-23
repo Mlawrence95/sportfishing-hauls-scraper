@@ -1,0 +1,18 @@
+name: sportfishing-env
+channels:
+  - anaconda
+  - conda-forge
+  - defaults
+dependencies:
+  - beautifulsoup4=4.9.3=pyhb0f4dca_0
+  - jupyter=1.0.0=py37_7
+  - matplotlib=3.1.1=py37h54f8f79_0
+  - mysql-connector-c=6.1.11=h42c63d9_1003
+  - mysql-connector-python=8.0.17=py37h7d2c6da_0
+  - numpy=1.18.1=py37h7241aed_0
+  - pandas=0.25.3=py37h0a44026_0
+  - phantomjs=2.1.1=1
+  - python=3.7.6=h359304d_2
+  - requests=2.23.0=py37_0
+  - scikit-learn=0.22.1=py37h27c97d8_0
+  - selenium=3.141.0=py37h1de35cc_0
