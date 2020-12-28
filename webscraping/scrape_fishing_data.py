@@ -3,8 +3,8 @@ import logging
 import requests
 import time
 
-from ..db_utils.db_queries import sql_insert_fishing_report, sql_get_completed_fishing_report_links
-from ..db_utils.mysql_db_connection import get_mysql_connection
+from db_utils.db_queries import sql_insert_fishing_report, sql_get_completed_fishing_report_links
+from db_utils.mysql_db_connection import get_mysql_connection
 
 from bs4 import BeautifulSoup
 
