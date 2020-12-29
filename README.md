@@ -1,15 +1,19 @@
 # Sportfishing Hauls Scraper
- Scrapes data from San Diego's Independence Sportfishing, 
- who posts catch reports from deep sea fishing trips such 
+ Scrapes data from San Diego's Independence Sportfishing,
+ who posts catch reports from deep sea fishing trips such
  [as this](http://www.independencesportfishing.com/detailed_report.php?report_id=168239), then scrapes data from weather underground's San Diego Airport location.
- 
+
+ The data collected allows us to ask interesting questions such as, "what is typical of a good fishing trip in each season?", or, "when are the peak months for sportfishing in San Diego?".
+
+ ![Posts from Independence Sportfishing by month](post_seasonality.png)
+
  ## Interface
- 
+
  There is a long way and a short way to use this repo. You can replicate what I did here
  by setting up your own MySQL database and populating it using my tools, or use my checkpointed data in the CSV
   by reading `raw_fishing_data.csv`.
- 
- 
+
+
  #### The short way
  If you don't want to scrape the data again, I've dumped the data as of December 20th, 2020. It can be accessed like,
 
@@ -22,9 +26,9 @@ or simply read into excel or your spreadsheet tool of choice.
 
  #### The long way
  This involves making a mysql database and waiting a couple days to scrape the data.
- 
+
  \# TODO: Documentation of running the scrapers and populating the database
- 
+
  The populated MySQL database can be queried easily into a pandas object like,
  ```python
 from db_utils.db_queries import sql_all_reports_with_weather
@@ -95,4 +99,3 @@ yielding a table with a schema like:
     </tr>
   </tbody>
 </table>
-
