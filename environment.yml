@@ -5,6 +5,7 @@ channels:
   - defaults
 dependencies:
   - beautifulsoup4=4.9.3
+  - gensim=3.8
   - ipykernel
   - jupyter=1.0.0
   - matplotlib=3.1
@@ -13,7 +14,9 @@ dependencies:
   - numpy=1.18.1
   - pandas=0.25
   - phantomjs=2.1.1=1
+  - pyldavis=2.1
   - python=3.7
   - requests=2.23.0
   - scikit-learn=0.22
   - selenium=3.141
+  - smart_open=4.0
