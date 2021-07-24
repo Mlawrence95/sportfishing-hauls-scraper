@@ -5,3 +5,4 @@ geckodriver.log
 *.xml
 *.iml
 *.pyc
+.ipynb_checkpoints/analysis-checkpoint.ipynb
