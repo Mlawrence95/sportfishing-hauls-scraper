@@ -5,7 +5,13 @@
 
  The data collected allows us to ask interesting questions such as, "what is typical of a good fishing trip in each season?", or, "when are the peak months for sportfishing in San Diego?".
 
- ![Posts from Independence Sportfishing by month](post_seasonality.png)
+ ![Posts from Independence Sportfishing by month](assets/post_seasonality.png)
+
+ ## High Level Workflow
+
+ A rudimentary view of the project is this: we wish to correlate fish report information with weather. Thus we collect fish reports and weather data, store them in a MySQL database, then query the updated scraped data to run text analysis.
+
+  ![workflow](assets/generic_workflow.png)
 
  ## Interface
 

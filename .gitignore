@@ -6,3 +6,5 @@ geckodriver.log
 *.iml
 *.pyc
 .ipynb_checkpoints/analysis-checkpoint.ipynb
+.DS_Store
+.ipynb_checkpoints/analysis-checkpoint.ipynb
