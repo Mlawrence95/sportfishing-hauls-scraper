@@ -11,7 +11,7 @@
 
  A rudimentary view of the project is this: we wish to correlate fish report information with weather. Thus we collect fish reports and weather data, store them in a MySQL database, then query the updated scraped data to run text analysis.
 
-  ![workflow](assets/generic_workflow.png)
+  ![workflow](assets/generic_architecture.png)
 
  ## Interface
 
